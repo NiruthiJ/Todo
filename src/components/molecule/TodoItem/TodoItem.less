@@ -1,0 +1,40 @@
+@import "~antd/dist/antd.less";
+
+.ant-checkbox {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.ant-checkbox-inner {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
+.ant-checkbox-inner::after {
+  width: 11px;
+  height: 15px;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 575px) {
+    & {
+      display: block;
+    }
+  }
+  .todo-item {
+    .todo-tag {
+      margin: 10px;
+      margin-left: 0px;
+      white-space: normal !important;
+      word-break: break-all;
+    }
+  }
+
+  .bottomInfo {
+    align-items: left;
+    display: block;
+  }
+}
